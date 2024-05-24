@@ -1,0 +1,13 @@
+#fibonacci
+#1 1 2 3 5 8 13 
+
+def fibonacci(num):
+  if num <= 1 or num <= 2:
+    return 1 
+  else:
+    resultado = fibonacci (num - 1) + fibonacci (num - 2) 
+    return resultado 
+
+num = int(input())
+r = fibonacci(num)
+print(r)
